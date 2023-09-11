@@ -33,7 +33,7 @@ Apllying linear regression, lasso, and ridgetest to evaluate a variety of models
 
 * A newer house would have a higher price. 
 * The quality of overall material and  finish of the house  go up, the sale price go up. 
-* The total square feet of the basement area , ground living area,  and first floor square feet increase, the sale price increase.
+* The total square feet of the basement area , ground living area,  and first floor square feet increase the sale price increase.
 * Basement  have the height above 80 inches would have higher price than others. 
 * Single family house are  popular and have higher pricing. 
 * Total rooms of house (does not include bathrooms)  between 7 and 12 would have higher price than others.
