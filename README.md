@@ -29,11 +29,11 @@ Read this for each criteria description. ([data description](http://jse.amstat.o
 
 Apllying linear regression, lasso, and ridgetest to evaluate a variety of models to identify a production algorithm.
 
-## Conclusions
+## Modeling Interpretation & Conclusions
 
-* A newer house would have a higher price. 
-* The quality of overall material and  finish of the house  go up, the sale price go up. 
-* The total square feet of the basement area , ground living area,  and first floor square feet increase the sale price increase.
-* Basement  have the height above 80 inches would have higher price than others. 
-* Single family house are  popular and have higher pricing. 
-* Total rooms of house (does not include bathrooms)  between 7 and 12 would have higher price than others.
+* Model 1 and model 2 are predicted base on 87 features including some objects features after OneHotEncorder by applying Linear Regression model, Ridge model, and Lasso model. The train score of all the models are little higher than test score. Both models are underfit. To improve the underfit of both models, I should add more features and try some different range of alpha on ridge and lasso model.
+* The Root Mean Squared Error (RMSE) of the model 1 and model 2 are high. The values of the RMSE are high may be due to some outliers.
+* The RMSE in the Linear Regression model are higher than Ridge and Lasso model. In model 1, the RMSE of Linear Regression is around 28492.93, RMSE of Ridge is around 28237.79, and RMSE of Lasso is around 28050.53. In the model 2, I keep the Linear Regression model the same but change the range of alpha in Ridge and Lasso model. The RMSE of Ridge in model 2 is around 28161.30 and lower than model 1 but the RMSE of Lasso in model 2 is higher than model 1, it is around 28484.64.
+* In model 1, the best test score (around 0.872) and the lowest MSE is from Lasso model. In model 2, the best test score (around 0.871) and lowest MSE is from Ridge model.
+* In conclusion, model 1 and model 2 cannot be use to predict the sale price due to the high value of MSE. In the future, may be add more features, try some different model and different range of alpha on Ridge and Lasso.
+
